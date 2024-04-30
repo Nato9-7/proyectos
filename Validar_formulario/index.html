@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <title>Validacioón de formulario JQuery</title>
 </head>
 <body>
-    
-    <div id="container">
-        <form id="miFormulario">
-            <label >*Nombre: </label> <br />
-            <input type="text" id="itNombre" class="campo"><br />
-            <div id="mensaje1" class="errores">Dame tu nombre</div>
+    <div class="container p-5">
 
-            <label >*Correo electronico:</label><br />
-            <input type="text" id="itMail" class="campo"><br />
-            <div id="mensaje2" class="errores">Dame un mail correcto</div>
+        <h2 class="container-titulo">Validacion de formulario Jquery</h2>
 
-            <label >*Asunto:</label><br />
-            <input type="text" id="itAsunto" class="campo"><br />
-            <div id="mensaje3" class="errores">Dame el motivo</div>
+        <form id="formulario" method="post">
+            <label for="name">*Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Introduce tu nombre">
+            <br/><br/>
 
-            <input type="submit" id="bEnviar" value="Enviar datos" class="boton">
+            <label for="email">*Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Introduce tu correo electronico">
+            <br/><br/>
+
+            <label for="password">*Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Introduce tu contraseña">
+            <br/><br/>
+
+            <div style="text-align: center;">
+                <input class="btn btn-danger" type="submit" value="Submit">
+            </div>
         </form>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    </div>
+    
     <script src="./assets/js/actions.js"></script>
 </body>
 </html>

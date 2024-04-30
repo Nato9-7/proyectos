@@ -1,26 +1,40 @@
-let expr = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
 
-$(document).ready(function(){
-    $("#bEnviar").click(function(){
-        let nombre = $("#itNombre").val();
-        let correo = $("#itMail").val();
-        let asunto = $("#itAsunto").val();
-        
-        if (nombre == "") {
-            $("#mensaje1").fadeIn(); //Muestra el mensaje
-            return false;
-        }else{
-            $("#mensaje1").fadeOut(); //Oculta el mensaje
-            if (correo == "" || !expr.test(correo)) { //valida el correo y el @ 
-                $("#mensaje2").fadeIn();
-                return false;
-            } else {
-                $("#mensaje2").fadeOut();
-                if (asunto == "") {
-                    $("#mensaje3").fadeIn();
-                    return false
-                } 
-            }
-        }
-    })
-})
+jQuery('#formulario').validate({
+    rules:{
+    name:"required",
+    email:{
+    required:true,
+    email:true
+    
+    },
+    
+    
+    password:{
+    required:true,
+    minlength:5
+    },
+    
+    
+    },messages:{
+    
+    name:"POR FAVOR, ESCRIBA SU NOMBRE",
+    email:{
+    required:"POR FAVOR, INGRESE EL CORREO ELECTRÓNICO",
+    email:"POR FAVOR, INGRESE UN CORREO ELECTRÓNICO VÁLIDO",
+    },
+    
+    
+    
+    password:{
+    required:"POR FAVOR, INTRODUZCA SU CONTRASEÑA",
+    minlength:"LA CONTRASEÑA DEBE TENER 10 CARÁCTERES"
+    },
+    },
+    
+    submitHandler:function(form)
+    
+    {
+    form.submit();
+    }
+    });
+    
