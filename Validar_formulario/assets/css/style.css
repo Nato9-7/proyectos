@@ -4,6 +4,7 @@ body{
 
 *{
     box-sizing: border-box;
+
 }
 
 input[type=text],input[type=email],input[type=password],select,textarea{
@@ -34,9 +35,11 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+
+input[type=submit] {
     background-color: black;
 }
+
 
 .container {
     border-radius: 20px;
@@ -45,7 +48,6 @@ input[type=submit]:hover {
     width: 800px;
     height: 670px;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
-
 }
 
 .container-titulo{
