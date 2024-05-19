@@ -12,6 +12,10 @@ body{
 }
 
 
+h1,h2,h3,h4{
+    text-wrap: balance;
+}
+
 
 section div, a{
     border-radius: 15px;
