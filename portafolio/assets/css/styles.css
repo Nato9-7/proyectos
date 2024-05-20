@@ -71,8 +71,6 @@ nav.sticky{
     font-size: clamp(1vw, 2rem, 5.5vw);
 }
 
-
-
 .introduccion h1,p{
     margin: 0 auto;
 }
@@ -124,11 +122,12 @@ nav.sticky{
 
 .lenguaje img{
     height: 70px;
+    margin: 5px;
 }
 
 .fila-5{
     background-color: #073e5d;
-    
+    margin-top: 0px;
 }
 
 .fila-5 div{
