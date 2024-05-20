@@ -21,7 +21,7 @@ section div, a{
     border-radius: 15px;
 }
 
-
+/*Inicio Navbar */
 nav.navbar{
     background-color: transparent!important;
     width: 100%;
@@ -49,7 +49,9 @@ nav.sticky{
 .navbar-brand img{
     inline-size: 50px;
 }
+/* Fin Navbar */
 
+/* Inicio seccion fila 1 */
 .fila-1{
     height: 300px;
     margin-bottom: 10px;
@@ -74,7 +76,9 @@ nav.sticky{
 .introduccion h1,p{
     margin: 0 auto;
 }
+/* Fin seccion fila 1 */
 
+/* Inicio seccion fila 2 */
 .fila-2{
     margin-bottom: 10px;
 }
@@ -87,14 +91,15 @@ nav.sticky{
 #discord{
     background-color: #ffff;
 }
+/* Final seccion fila 2 */
 
+/* Inicio seccion fila 3 */ 
+.fila-3{
+    margin-bottom: 10px;
+}
 
 #map{
     height: 250px;
-}
-
-.fila-3{
-    margin-bottom: 10px;
 }
 
 .proyecto{
@@ -108,8 +113,9 @@ nav.sticky{
     background-position-y: center;
     background-size: cover;
 }
+/* Final seccion fila 3 */
 
-
+/* Inicio seccion fila 4 */
 .fila-4{
     display: flex;
     flex-wrap: wrap;
@@ -119,21 +125,37 @@ nav.sticky{
     margin-bottom: 60px;
 }
 
-
 .lenguaje img{
     height: 70px;
-    margin: 5px;
+}    
+ 
+@media screen and (max-width: 768px){
+    .fila-4{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        height: 100px;
+        margin-bottom: 140px;
+    }
+    
+    .lenguaje img{
+        height: 70px;
+        margin-bottom: 30px;
+    }    
 }
 
+/* Final seccion fila 4 */
+
+/* Incio seccion fila 5 */
 .fila-5{
     background-color: #073e5d;
-    margin-top: 0px;
 }
 
 .fila-5 div{
     margin: 0 auto;
 }
-
+/* Final seccion fila 5 */
 
 /* Hover  */
 #linkedin:hover, #discord:hover, #github:hover, .proyecto:hover, .clima:hover{
